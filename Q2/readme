@@ -1,0 +1,40 @@
+To run tests in Q2 and Q3 you can use a SQL Playground (https://www.db-fiddle.com/)
+    a) Create the tables and add data using this script
+
+CREATE TABLE users (
+  id INT,
+  name VARCHAR(100),
+  password VARCHAR(100),
+  username VARCHAR(100),
+  client_id INT
+);
+INSERT INTO users VALUES (1, 'John', '123', 'JohnDoe', 1);
+INSERT INTO users VALUES (2, 'Mary', '456', 'JaneDoe', 2);
+INSERT INTO users VALUES (3, 'Peter', '123', 'PeterPan', 1);
+INSERT INTO users VALUES (4, 'Yamil', '456', 'YamilBracho', 1);
+
+CREATE TABLE clients (
+  id INT,
+  name VARCHAR(100),
+  address VARCHAR(100),
+  city VARCHAR(100),
+  state varchar(100),
+  zip_code varchar(100)
+);
+
+INSERT INTO clients VALUES (1, 'John', '1010', 'Miami', 'FL', '100');
+INSERT INTO clients VALUES (2, 'Mary', '2020', 'Panama', 'PAN', '200');
+2) Write a PostresSQL query that takes the data from 2 tables and outputs 
+	“user’s name”, 
+	“user’s id” and 
+	“user’s client name”.  
+
+	The tables are named “users” and “clients”.  
+	“users” contains the columns id, name, password, username, client_id as columns.  
+	clients contains id, name, address, city, state, zip_code.  
+	Each column of the output should be properly labeled as indicated in the initial request.
+
+3) To run the tests, just open main.sql in Q2 and Q3 and copy in the Query SQL Box and run 
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="num in nums">
+            <span v-if="(num % 3 == 0) && (num % 5 == 0)">three and five</span>
+            <span v-else-if="num % 3 == 0">three</span>
+            <span v-else-if="num % 5 == 0">five</span>
+        </li>
+      </ul>
+    </div>
+    <script>
+        var vm = new Vue({
+          el: '#app',
+          data: {
+            nums:[],
+          },
+          created: function () {
+             var items = [];
+             for (var i=3; i < 104; i++) {
+                items.push(i);
+             }
+             this.nums = items;
+          }
+        })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+
+   1) Clone project: git clone git@example.com:project-name.git.
+   2) Create branch with your feature: git checkout -b $feature_name.
+   3) Make ammends and implement new funcionality. Issue unitary tests
+   4) Push your branch
+   5) Make tests in a like-production environmente
+   6) Create a merge request

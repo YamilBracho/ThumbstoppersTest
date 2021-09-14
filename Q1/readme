@@ -1,0 +1,12 @@
+To run any of the those examples 
+    - Download the directory to any folder in your PC
+    - Open main01.html or main02.html in your browser
+    
+ - First approach
+     this sample mixes UI and processing code in UI. Just check that the decisions are done
+     in the loop where options are shown. A realyy bad decision because you are mixing things
+
+- Second approach 
+      The processing code is done where ite belongs, the javascript part.
+
+
